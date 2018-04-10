@@ -1,6 +1,6 @@
 <?php
-require_once('lib.php');
-ini_set('memory_limit', '-1');
+require_once('dic_lib.php');
+ini_set('memory_limit', -1);
 
 
 
