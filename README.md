@@ -15,7 +15,7 @@ Lo cual tiene esta forma:
 
 (Esto no pasara si check esta en 0, en ese caso su complejidad es lineal, se podrian generar diccionarios de TB's sin mucho gasto temporal, de esa forma es eficiente pero no se tiene la certeza absoluta que no haya repeticion en alguna parte)
 
-![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Csum_%7Bi%20%3D%201%7D%5E%7BN%7D%20%3D%201%20&plus;%202%20&plus;%203%20&plus;%204%20...%20&plus;%20%28N%20-%201%29%20&plus;%20N)
+![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Csum_%7B%5Cpsi%20%3D%201%7D%5E%7B%5Clambda%20%7D%5Cleft%20%7C%20%5Cpsi%20%5Cright%20%7C%20%3D%20%7C%5Clambda%20-%20%28%5Clambda%20-%20%5Cpsi_%7B1%7D%29%7C%20&plus;%20%7C%5Clambda%20-%20%28%5Clambda%20-%20%5Cpsi_%7B2%7D%29%7C%20&plus;.....&plus;%20%7C%5Clambda%7C)
 
 o visto de una manera resumida:
 
