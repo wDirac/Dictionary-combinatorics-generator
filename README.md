@@ -13,7 +13,7 @@ suficientemente grande y el parametro check esta en 1, siendo las dos operacione
 
 Lo cual tiene esta forma:
 
-(Esto no pasara si check esta en 0, en ese caso su complejidad es lineal, se podrian generar diccionarios de TB's sin mucho gasto temporal, en ese caso es muy muy eficiente)
+(Esto no pasara si check esta en 0, en ese caso su complejidad es lineal, se podrian generar diccionarios de TB's sin mucho gasto temporal, de esa forma es eficiente pero no se tiene la certeza absoluta que no haya repeticion en alguna parte)
 
 ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Csum_%7Bi%20%3D%201%7D%5E%7BN%7Di%20%3D%201%20&plus;%202%20&plus;%203...%20%28N%20-%201%29%20&plus;%20N)
 
