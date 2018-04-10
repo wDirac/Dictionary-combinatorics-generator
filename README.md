@@ -3,10 +3,9 @@ Random dictionary generator, as a semi-efficient Algorithm
 
 
 Actualmente este algoritmo presente un serio problema en cuanto al recurso temporal, cuando la cantidad de cadenas es 
-suficientemente grande y el parametro check esta en 1
+suficientemente grande y el parametro check esta en 1, siendo las dos operaciones mas repetidas de este algoritmo entre otras la de lectura en el array y la comprobacion de dos strings, a medida que se busca integrar mas claves estas tendra que ser comprobadas con las que ya estan para comprobar similitudes.
 
-dado a que la cantidad de comprobaciones y lecturas en el array central tiene la forma de un sumatorio en indice inferior 1, hasta
-N siendo N el numero maximo de cadenas dando como resultado algo como esto:
+Lo cual tiene esta forma:
 
 ![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Csum_%7Bi%20%3D%201%7D%5E%7BN%7Di%20%3D%201%20&plus;%202%20&plus;%203...%20%28N%20-%201%29%20&plus;%20N)
 
