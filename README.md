@@ -19,7 +19,7 @@ Lo cual tiene esta forma:
 
 o visto de una manera resumida:
 
-![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Cfrac%7BN%28N%20&plus;%201%29%7D%7B2%7D)
+![equation](https://latex.codecogs.com/png.latex?%5Cdpi%7B200%7D%20%5Cfrac%7B%5Clambda%28%5Clambda%20&plus;%201%29%7D%7B2%7D)
 
 
 Conclusion, para diccionarios modestos es relativamente eficiente, en un futuro habra una implementacion en C la cual aproveche todos los nucleos de una CPU en lo posible, y en tiempo sea mucho mas eficiente.
