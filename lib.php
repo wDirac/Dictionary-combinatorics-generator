@@ -32,14 +32,23 @@ function hex_string_gen($individual_string_len = 30, $symbols = ''){
 
 	$gen_symbols = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
 
-	if($symbols != $gen_symbols && is_array($symbols) && (count($symbols) >= 1)){
+	if($symbols != $gen_symbols && is_array($symbols) && (count_t($symbols) >= 1)){
 
 		$gen_symbols = $symbols;
+	}
+
+	if(is_array($individual_string_len) && (count_t($individual_string_len) === 2)){
+
+		if(is_int($individual_string_len[0]) && is_int($individual_string_len[1])){
+
+			$individual_string_len = mt_rand($individual_string_len[0],$individual_string_len[1]);
+		}
 	}
 
 	$ret = [];
 
 	for($a = 0; $a < $individual_string_len; $a++){
+
 		$ret[$a] = $gen_symbols[mt_rand(0, count_t($gen_symbols) - 1)];
 	}
     
@@ -54,8 +63,6 @@ function final_strings_array_gen($strings_number, $individual_string_len, $symbo
 
 	for($a = 0; $a < $strings_number; $a++){
         
-        A:
-        
 		$current = hex_string_gen($individual_string_len, $symbols);
 
 		if($check === 0){
@@ -67,7 +74,9 @@ function final_strings_array_gen($strings_number, $individual_string_len, $symbo
 		if(!in_array_t($current, $final_array)){
 			$final_array[$a] = $current;
 		}else{
-			goto A;
+
+			$a--;
+			continue;
 		}
 
 	}
@@ -77,7 +86,7 @@ function final_strings_array_gen($strings_number, $individual_string_len, $symbo
 	return $final_array;
 }
 
-function in_array_t($needle, $target, $mode = false){
+function in_array_t($needle, $target, $mode = false){ // funcion default activada
 
 	return in_array($needle, $target, $mode);
 
@@ -92,7 +101,7 @@ function in_array_t($needle, $target, $mode = false){
 	return $r;
 }
 
-function count_t($a){
+function count_t($a){ // funcion default activada
 
 	return count($a);
 
