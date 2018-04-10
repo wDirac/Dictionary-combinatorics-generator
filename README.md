@@ -2,6 +2,7 @@
 Random dictionary generator, as a semi-efficient Algorithm
 
 
+
 Actualmente este algoritmo presente un serio problema en cuanto al recurso temporal, cuando la cantidad de cadenas es 
 suficientemente grande y el parametro check esta en 1, siendo las dos operaciones mas repetidas de este algoritmo entre otras la de lectura en el array y la comprobacion de dos strings, a medida que se busca integrar mas claves estas tendra que ser comprobadas con las que ya estan para comprobar similitudes.
 
