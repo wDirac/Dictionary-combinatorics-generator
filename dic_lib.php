@@ -28,7 +28,7 @@ function read($fname, $ret_type=0, $data_len=0){
 	}
 }
 
-function hex_string_gen($individual_string_len = 30, $symbols = ''){
+function hex_string_gen($individual_string_len, $symbols){
 
 	$gen_symbols = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
 
